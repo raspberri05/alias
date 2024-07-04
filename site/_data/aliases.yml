@@ -3,10 +3,15 @@ sections:
     commands:
       - name: git add .
         alias: gad
+        usage: gad
         description: git status
+        
       - name: git commit -m
         alias: gcm
+        usage: gcm "commitmsg"
         description: git commit
+
       - name: git push
         alias: gp
         description: git push
+        usage: gp
