@@ -7,10 +7,11 @@ a collection of aliases to help speed up development
 ### MacOS and Linux
 
 1. Installing the files
-   - ```curl -LOk https://github.com/raspberri05/alias/raw/main/aliases/.aliases.zip && unzip .aliases.zip -d ~/ && rm .aliases.zip```
+   - Ensure you are in your home directory
+   - ```git clone https://github.com/raspberri05/alias.git```
 
-2. Sourcing the aliases
-   - If you are using zsh: ```sh ~/.aliases/setup_alias_zsh.sh```
+3. Sourcing the aliases
+   - If you are using zsh: ```sh alias/scripts/setup_alias_zsh.sh```
 
 ## Usage
 
