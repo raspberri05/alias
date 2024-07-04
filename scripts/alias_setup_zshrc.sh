@@ -1,5 +1,5 @@
 # Define the content to add to ~/.zshrc
-content='for file in $HOME/.aliases/*.sh; do
+content='for file in $HOME/alias/aliases/*.sh; do
     if [ -r "$file" ]; then
         source "$file"
     fi
