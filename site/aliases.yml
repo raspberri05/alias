@@ -1,0 +1,12 @@
+sections:
+  - section: git
+    commands:
+      - name: git add .
+        alias: gad
+        description: git status
+      - name: git commit -m
+        alias: gcm
+        description: git commit
+      - name: git push
+        alias: gp
+        description: git push
