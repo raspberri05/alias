@@ -1,17 +1,52 @@
 sections:
-  - section: git
+
+  - section: Git
     commands:
       - name: git add .
         alias: gad
-        usage: gad
-        description: git status
-        
+        params: none
+        description: stages all changes in Git repository
+
       - name: git commit -m
         alias: gcm
-        usage: gcm "commitmsg"
-        description: git commit
+        params: "commit message"
+        description: commits all changes to Git repository
 
       - name: git push
         alias: gp
-        description: git push
-        usage: gp
+        params: none
+        description: pushes changes to Github
+
+  - section: NPM
+    commands:
+      - name: npm install
+        alias: ni
+        params: none
+        description: installs all dependencies
+
+      - name: npm start
+        alias: ns
+        params: none
+        description: starts the development server
+
+      - name: npm run build
+        alias: nrb
+        params: none
+        description: builds the project
+
+      - name: npm run dev
+        alias: nrd
+        params: none
+        description: starts the development server
+      
+  - section: Jekyll
+    commands:
+      - name: bundle exec jekyll serve
+        alias: bejs
+        params: none
+        description: starts the Jekyll server
+
+      - name: bundle exec jekyll build
+        alias: bejb
+        params: none
+        description: builds the Jekyll project

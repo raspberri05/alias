@@ -8,3 +8,5 @@ url: https://just-the-docs.github.io
 
 aux_links:
   Github: https://github.com/raspberri05/alias
+
+permalink: /:title
