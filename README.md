@@ -15,3 +15,7 @@ a collection of aliases to help speed up development
 
 ## Usage
 
+## Local Development
+
+1. Make code changes in ```site/_date/aliases.yml```
+2. Propagate the changes to the alias sh files and to the website by running ```python scripts/make_aliases.py```
