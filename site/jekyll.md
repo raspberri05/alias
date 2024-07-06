@@ -16,4 +16,3 @@ required parameters: none
 builds the Jekyll project
 
 required parameters: none
-

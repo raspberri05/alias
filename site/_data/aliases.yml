@@ -1,9 +1,8 @@
 sections:
-
   - section: Git
     commands:
       - name: git add .
-        alias: gad
+        alias: ga.
         params: none
         description: stages all changes in Git repository
 
@@ -16,6 +15,11 @@ sections:
         alias: gp
         params: none
         description: pushes changes to Github
+
+      - name: git pull
+        alias: gpl
+        params: none
+        description: pulls changes from Github
 
   - section: NPM
     commands:
@@ -38,7 +42,7 @@ sections:
         alias: nrd
         params: none
         description: starts the development server
-      
+
   - section: Jekyll
     commands:
       - name: bundle exec jekyll serve
@@ -50,3 +54,14 @@ sections:
         alias: bejb
         params: none
         description: builds the Jekyll project
+
+  - section: Prettier
+    commands:
+      - name: prettier --write .
+        alias: pw.
+        params: none
+        description: formats all files in the project
+      - name: prettier --check .
+        alias: pc.
+        params: none
+        description: formats a specific file

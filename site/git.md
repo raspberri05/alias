@@ -5,7 +5,7 @@ layout: home
 
 # Git
 
-## gad -> git add .
+## ga. -> git add .
 
 stages all changes in Git repository
 
@@ -23,3 +23,8 @@ pushes changes to Github
 
 required parameters: none
 
+## gpl -> git pull
+
+pulls changes from Github
+
+required parameters: none
