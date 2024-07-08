@@ -21,6 +21,133 @@ sections:
         params: none
         description: pulls changes from Github
 
+      - name: git status
+        alias: gs
+        params: none
+        description: shows the status of the Git repository
+
+      - name: git log
+        alias: gl
+        params: none
+        description: shows the commit history
+
+      - name: git branch
+        alias: gb
+        params: none
+        description: shows the branches in the repository
+
+      - name: git checkout
+        alias: gco
+        params: branch-name
+        description: switches to a different branch
+
+      - name: git merge
+        alias: gm
+        params: branch-name
+        description: merges a branch into the current branch
+
+      - name: git clone
+        alias: gcl
+        params: repository-url
+        description: clones a repository from Github
+
+      - name: git init
+        alias: gi
+        params: none
+        description: initializes a new Git repository
+
+      - name: git remote add origin
+        alias: grao
+        params: repository-url
+        description: adds a remote repository
+
+      - name: git remote -v
+        alias: grv
+        params: none
+        description: shows the remote repositories
+
+      - name: git diff
+        alias: gd
+        params: none
+        description: shows the changes between commits
+
+      - name: git checkout -b
+        alias: gcb
+        params: branch-name
+        description: creates a new branch
+
+      - name: git reset
+        alias: gr
+        params: none
+        description: resets the changes in the working directory
+
+      - name: git reset --hard
+        alias: grhh
+        params: none
+        description: resets the changes in the working directory and index
+
+      - name: git reset --soft
+        alias: grs
+        params: none
+        description: resets the changes in the working directory
+
+      - name: git reset HEAD
+        alias: grh
+        params: none
+        description: resets the changes in the index
+
+  - section: Docker
+    commands:
+      - name: docker build -t
+        alias: dbt
+        params: image-name
+        description: builds a Docker image
+
+      - name: docker run -p
+        alias: drp
+        params: port:port image-name
+        description: runs a Docker container
+
+      - name: docker ps
+        alias: dps
+        params: none
+        description: shows the running containers
+
+      - name: docker ps -a
+        alias: dpsa
+        params: none
+        description: shows all containers
+
+      - name: docker stop
+        alias: dst
+        params: container-id
+        description: stops a running container
+
+      - name: docker rm
+        alias: drm
+        params: container-id
+        description: removes a container
+
+      - name: docker rmi
+        alias: drmi
+        params: image-id
+        description: removes an image
+
+      - name: docker exec -it
+        alias: dei
+        params: container-id /bin/bash
+        description: executes a command in a running container
+
+      - name: docker-compose up
+        alias: dcu
+        params: none
+        description: starts the Docker Compose services
+
+      - name: docker-compose down
+        alias: dcd
+        params: none
+        description: stops the Docker Compose services
+
   - section: NPM
     commands:
       - name: npm install
