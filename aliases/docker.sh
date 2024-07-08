@@ -1,5 +1,0 @@
-alias dc="docker-compose"
-alias dcu="docker-compose up -d"
-alias dcd="docker-compose down"
-alias dps="docker ps"
-alias di="docker images"
