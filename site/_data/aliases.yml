@@ -148,6 +148,118 @@ sections:
         params: none
         description: stops the Docker Compose services
 
+      - name: docker-compose ps
+        alias: dcp
+        params: none
+        description: shows the Docker Compose services
+
+      - name: docker-compose logs
+        alias: dcl
+        params: none
+        description: shows the logs of the Docker Compose services
+
+  - section: Kubernetes
+    commands:
+      - name: kubectl get pods
+        alias: kgp
+        params: none
+        description: shows the pods in the Kubernetes cluster
+
+      - name: kubectl get services
+        alias: kgs
+        params: none
+        description: shows the services in the Kubernetes cluster
+
+      - name: kubectl get deployments
+        alias: kgd
+        params: none
+        description: shows the deployments in the Kubernetes cluster
+
+      - name: kubectl get nodes
+        alias: kgn
+        params: none
+        description: shows the nodes in the Kubernetes cluster
+
+      - name: kubectl get configmaps
+        alias: kgc
+        params: none
+        description: shows the configmaps in the Kubernetes cluster
+
+      - name: kubectl get secrets
+        alias: kgs
+        params: none
+        description: shows the secrets in the Kubernetes cluster
+
+      - name: kubectl get namespaces
+        alias: kgn
+        params: none
+        description: shows the namespaces in the Kubernetes cluster
+
+      - name: kubectl get all
+        alias: kga
+        params: none
+        description: shows all resources in the Kubernetes cluster
+
+      - name: kubectl describe pod
+        alias: kdp
+        params: pod-name
+        description: describes a pod in the Kubernetes cluster
+
+      - name: kubectl describe service
+        alias: kds
+        params: service-name
+        description: describes a service in the Kubernetes cluster
+
+      - name: kubectl describe deployment
+        alias: kdd
+        params: deployment-name
+        description: describes a deployment in the Kubernetes cluster
+
+      - name: kubectl describe node
+        alias: kdn
+        params: node-name
+        description: describes a node in the Kubernetes cluster
+
+      - name: kubectl describe configmap
+        alias: kdc
+        params: configmap-name
+        description: describes a configmap in the Kubernetes cluster
+
+      - name: kubectl describe secret
+        alias: kds
+        params: secret-name
+        description: describes a secret in the Kubernetes cluster
+
+      - name: kubectl describe namespace
+        alias: kdn
+        params: namespace-name
+        description: describes a namespace in the Kubernetes cluster
+
+      - name: kubectl describe all
+        alias: kda
+        params: resource-name
+        description: describes all resources in the Kubernetes cluster
+
+      - name: kubectl apply -f
+        alias: kaf
+        params: file-name
+        description: applies a configuration file to the Kubernetes cluster
+
+      - name: kubectl delete -f 
+        alias: kdf
+        params: file-name
+        description: deletes a configuration file from the Kubernetes cluster
+
+      - name: kubectl exec -it
+        alias: kei
+        params: pod-name /bin/bash
+        description: executes a command in a pod in the Kubernetes cluster
+
+      - name: kubectl logs
+        alias: kl
+        params: pod-name
+        description: shows the logs of a pod in the Kubernetes cluster
+
   - section: NPM
     commands:
       - name: npm install
@@ -170,6 +282,70 @@ sections:
         params: none
         description: starts the development server
 
+      - name: npm run test
+        alias: nrt
+        params: none
+        description: runs the tests
+
+      - name: npm run lint
+        alias: nrl
+        params: none
+        description: runs the linter
+
+      - name: npm run format
+        alias: nrf
+        params: none
+        description: formats the code
+
+  - section: Yarn
+    commands:
+      - name: yarn install
+        alias: yi
+        params: none
+        description: installs all dependencies
+
+      - name: yarn start
+        alias: ys
+        params: none
+        description: starts the development server
+
+      - name: yarn build
+        alias: yb
+        params: none
+        description: builds the project
+
+      - name: yarn dev
+        alias: yd
+        params: none
+        description: starts the development server
+
+      - name: yarn test
+        alias: yt
+        params: none
+        description: runs the tests
+
+      - name: yarn lint
+        alias: yl
+        params: none
+        description: runs the linter
+
+      - name: yarn format
+        alias: yf
+        params: none
+        description: formats the code
+
+  - section: Gatsby
+    commands:
+      - name: gatsby develop
+        alias: gd
+        params: none
+        description: starts the Gatsby development server
+
+      - name: gatsby build
+        alias: gb
+        params: none
+        description: builds the Gatsby project
+
   - section: Jekyll
     commands:
       - name: bundle exec jekyll serve
@@ -181,6 +357,84 @@ sections:
         alias: bejb
         params: none
         description: builds the Jekyll project
+
+  - section: Hugo
+    commands:
+      - name: hugo server
+        alias: hs
+        params: none
+        description: starts the Hugo server
+
+      - name: hugo
+        alias: h
+        params: none
+        description: builds the Hugo project
+
+  - section: Vue
+    commands:
+      - name: vue serve
+        alias: vs
+        params: none
+        description: starts the Vue development server
+
+      - name: vue build
+        alias: vb
+        params: none
+        description: builds the Vue project
+
+  - section: React
+    commands:
+      - name: react-scripts start
+        alias: rss
+        params: none
+        description: starts the React development server
+
+      - name: react-scripts build
+        alias: rsb
+        params: none
+        description: builds the React project
+
+  - section: Angular
+    commands:
+      - name: ng serve
+        alias: ngs
+        params: none
+        description: starts the Angular development server
+
+      - name: ng build
+        alias: ngb
+        params: none
+        description: builds the Angular project
+
+  - section: Svelte
+    commands:
+      - name: svelte-kit dev
+        alias: skd
+        params: none
+        description: starts the Svelte development server
+
+      - name: svelte-kit build
+        alias: skb
+        params: none
+        description: builds the Svelte project
+
+  - section: Tailwind CSS
+    commands:
+      - name: npx tailwindcss build
+        alias: ntwb
+        params: none
+        description: builds the Tailwind CSS project
+
+  - section: ESLint
+    commands:
+      - name: eslint .
+        alias: es.
+        params: none
+        description: lints all files in the project
+      - name: eslint --fix .
+        alias: esf.
+        params: none
+        description: lints a specific file
 
   - section: Prettier
     commands:
