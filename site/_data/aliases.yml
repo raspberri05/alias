@@ -158,6 +158,31 @@ sections:
         params: none
         description: shows the logs of the Docker Compose services
 
+      - name: docker network prune
+        alias: dnetpr
+        params: none 
+        description: Remove all unused networks
+
+      - name: docker volume prune
+        alias: dvolpr
+        params: none 
+        description: Remove unused local volumes
+
+      - name: docker container prune
+        alias: dconpr
+        params: none 
+        description: Remove all stopped containers
+
+      - name: docker image prune
+        alias: dimgpr
+        params: none 
+        description: Remove unused images
+
+      - name: docker image prune -a
+        alias: dimgpra
+        params: none 
+        description: Remove all unused images, not just dangling ones
+
   - section: Kubernetes
     commands:
       - name: kubectl get pods
