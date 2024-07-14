@@ -1,47 +1,47 @@
 ---
-title: NPM
+title: Yarn
 layout: home
 ---
 
-# NPM
+# Yarn
 
-## ni -> npm install
+## yi -> yarn install
 
 installs all dependencies
 
 required parameters: none
 
-## ns -> npm start
+## ys -> yarn start
 
 starts the development server
 
 required parameters: none
 
-## nrb -> npm run build
+## yb -> yarn build
 
 builds the project
 
 required parameters: none
 
-## nrd -> npm run dev
+## yd -> yarn dev
 
 starts the development server
 
 required parameters: none
 
-## nrt -> npm run test
+## yt -> yarn test
 
 runs the tests
 
 required parameters: none
 
-## nrl -> npm run lint
+## yl -> yarn lint
 
 runs the linter
 
 required parameters: none
 
-## nrf -> npm run format
+## yf -> yarn format
 
 formats the code
 

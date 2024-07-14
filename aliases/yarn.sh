@@ -1,0 +1,7 @@
+alias yi="yarn install"
+alias ys="yarn start"
+alias yb="yarn build"
+alias yd="yarn dev"
+alias yt="yarn test"
+alias yl="yarn lint"
+alias yf="yarn format"
