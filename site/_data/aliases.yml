@@ -471,3 +471,62 @@ sections:
         alias: pc.
         params: none
         description: formats a specific file
+  
+  - section: Flutter
+    commands:
+      - name: flutter run
+        alias: fr
+        params: none
+        description: runs the Flutter project
+      - name: flutter build apk
+        alias: fba
+        params: none
+        description: builds the Flutter project
+      - name: flutter build ios
+        alias: fbi
+        params: none
+        description: builds the Flutter project for iOS
+      - name: flutter build web
+        alias: fbw
+        params: none
+        description: builds the Flutter project for the web
+      - name: flutter test
+        alias: ft
+        params: none
+        description: runs the tests in the Flutter project
+      - name: flutter doctor
+        alias: fd
+        params: none
+        description: shows the Flutter installation status
+      - name: flutter clean
+        alias: fc
+        params: none
+        description: cleans the Flutter project
+      - name: flutter pub get
+        alias: fpg
+        params: none
+        description: gets the dependencies in the Flutter project
+      - name: flutter pub upgrade
+        alias: fpu
+        params: none
+        description: upgrades the dependencies in the Flutter project
+      - name: flutter analyze
+        alias: fa
+        params: none
+        description: analyzes the Flutter project
+      - name: flutter format .
+        alias: ff.
+        params: none
+        description: formats the Flutter project
+      - name: flutter create
+        alias: fc
+        params: project-name
+        description: creates a new Flutter project
+      - name: flutter upgrade
+        alias: fu
+        params: none
+        description: upgrades the Flutter SDK
+      - name: flutter pub remove
+        alias: fpr
+        params: package-name
+        description: removes a package from the Flutter project
